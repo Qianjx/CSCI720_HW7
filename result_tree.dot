@@ -1,0 +1,24 @@
+digraph binaryTree{
+    node[shape=circle,color=red,fontcolor=blue,fontsize=10];
+    849->688;
+    688->442;
+    688->246;
+    246->131;
+    246->115;
+    442->261;
+    442->181;
+    261->140;
+    261->121;
+    849->161;
+    131[color=blue,label="size:131\nlabel:7"];
+    161[color=blue,label="size:161\nlabel:14"];
+    115[color=blue,label="size:115\nlabel:3"];
+    181[color=blue,label="size:181\nlabel:5"];
+    140[color=blue,label="size:140\nlabel:2"];
+    121[color=blue,label="size:121\nlabel:4"];
+    849[color=red,label="size:849\nlabel:2",fontsize=15];
+    688[color=red,label="size:688\nlabel:2",frontsize=10];
+    442[color=red,label="size:442\nlabel:2"];
+    261[color=red,label="size:261\nlabel:2"];
+    246[color=red,label="size:246\nlabel:3"];
+}
