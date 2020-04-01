@@ -11,9 +11,17 @@ digraph binaryTree{
     261->121;
     849->161;
     131[color=blue,label="size:131\nlabel:7"];
+    131_1[color=red,label="size:130\nlabel:7"]
+    131_0[color=red,label="size:1\nlabel:7"]
     161[color=blue,label="size:161\nlabel:14"];
+    161_1[color=red,label="size:160\nlabel:14"];
+    161_0[color=red,label="size:1\nlabel:14"];
     115[color=blue,label="size:115\nlabel:3"];
+    115_1[color=red,label="size:114\nlabel:3"];
+    115_0[color=red,label="size:1\nlabel:3"];
     181[color=blue,label="size:181\nlabel:5"];
+    181_1[color=red,label="size:180\nlabel:3"];
+    181_0[color=red,label="size:1\nlabel:3"];
     140[color=blue,label="size:140\nlabel:2"];
     121[color=blue,label="size:121\nlabel:4"];
     849[color=red,label="size:849\nlabel:2",fontsize=15];

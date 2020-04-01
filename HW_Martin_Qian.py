@@ -45,7 +45,7 @@ def Merge(data_nodes, node_pair):
     Merge will remove these two nodes and add a new merged node to all data nodes
     '''
 
-    # determine which node is smaller
+    # determine which node is smaller, the bigger size node would be left node
     if(node_pair[0].size >= node_pair[1].size):
         left = node_pair[0]
         right = node_pair[1]
@@ -58,7 +58,7 @@ def Merge(data_nodes, node_pair):
     data_nodes.add(merged_node)
     data_nodes.remove(node_pair[0])
     data_nodes.remove(node_pair[1])
-    print(len(merged_weights) + "nodes merged")
+    print(str(len(merged_weights)) + "nodes merged")
     return data_nodes
 
 def Agglomeration_Clustering(data_nodes):
@@ -83,13 +83,14 @@ def Agglomeration_Clustering(data_nodes):
 def Pre_Traversal(root, depth = 0):
     '''
     pre_traversal for the tree root
-    show the model
+    show the full model
     '''
-
+    # restrictions, because the tree has over 800 nodes
     if depth > 10 or root is None:
         return
     depth += 1
     trained_program.write(str(depth) + ' ' + str(root.label) + ' ' + str(root.size) + '\n')
+    trained_program.write(str(root.values) + '\n')
     Pre_Traversal(root.left, depth)
     Pre_Traversal(root.right, depth)
 
@@ -99,7 +100,7 @@ def main():
     shopping_cart_data = pd.read_csv('HW_PCA_SHOPPING_CART_v895.csv')
     # initialize all data nodes
     data_nodes = set()
-    for index in range(1, shopping_cart_data.shape[0]):
+    for index in range(0, shopping_cart_data.shape[0]):
         data_nodes.add(Agglomeration_Node(None, None, \
             shopping_cart_data.iloc[index,:]))
 
@@ -108,9 +109,9 @@ def main():
         data_nodes = Agglomeration_Clustering(data_nodes)
 
     Pre_Traversal(data_nodes.pop())
-    print('All Merged weight:' + merged_weights)
     trained_program.write(str(merged_weights))
-
+    print('All Merged weight:' + str(merged_weights))
+    
 
 if __name__ == "__main__":
     main()
