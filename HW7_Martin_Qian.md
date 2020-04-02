@@ -98,7 +98,7 @@ If $\alpha$ and $\beta$ are on the wrong sides, $\gamma$ can still get smaller v
 ### Part 3 (Qian Martin): Agglomeration
 
 Final agglomeration clustering result:
-<img src="HW7.png" title="final result" width="400" height="400" />
+<img src="HW7.png" title="final result" width="500" height="500" />
 The nodes show two things: their size and their labels. According to the requirement of letting small labels be main label while merging, the root label is definetaly 1. As we can see, six clusters(blue nodes) has been clearly generated, Due to the tree structure, no more nodes are needed to be shown.
 
 The model training part is very time consuming, about 3 hours. So it is not recommended to run to code. Alternatively, we saved the model into a text file and rebuild it with information we preserved. This is a rough display of the model, and if you want to see all the label for trained dataset, you can read the HW07_MQ_Trained_Classifier.txt for details.
@@ -106,18 +106,14 @@ The model training part is very time consuming, about 3 hours. So it is not reco
 ---
 
 1. When you have clustered to six clusters, report the size of each cluster, from lowest to highest. 
-115 121 131 140 161 181 
+115 121 131 141 161 181
 
 2. When you have clustered to six clusters, report the average prototype of these six clusters.
-node 1:
-node 2:
-node 3: 
-node 4: 
-node 5:
-node 6:
+So for every element, according to the model we get, we compute its distance to the center of all the clusters, then the shortest one is this element's cluster. Center is recorded as a member of the nodes.
 
 3. What typifies each of the six clusters?  What name should we give each of these prototypes? 
-As far as I am concerned, I am not sure what kind of name I should assign to each cluster. By looking into the dataset, for example, cluster labeled 1, we can see they are likely to buy eggs and milk and daily food together. So I think they might be students or workers. Similar to the rest 5 clusters.
+As far as I am concerned, I think it is hard to say, but we can at first using their labels to represent them, like cluster 1,3,4,5,7,14(generally, this label is the smallest id inside the cluster). They mean 6 different kinds of shoppers.
+I am not sure what kind of name I should assign to each cluster. However, by looking into the dataset, for example, cluster labeled 1, we can see most of them are likely to buy a lot eggs, meat, vegges and rice. So I think they might be normal family member as they buy daily things a lot and drink less. Similar to the rest 5 clusters, they do have different features, and stand for some people.
 
 6. Write a conclusion about what you learned overall.   If each of you learned different things, tell me what each of you learned. 
 

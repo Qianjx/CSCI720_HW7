@@ -10,23 +10,39 @@ digraph binaryTree{
     261->140;
     261->121;
     849->161;
+    131->1311;
+    131->1310;
+    161->1611;
+    161->1610;
+    115->1151;
+    115->1150;
+    181->1811;
+    181->1810;
+    140->1401;
+    140->1400;
+    121->1211;
+    121->1210;
     131[color=blue,label="size:131\nlabel:7"];
-    131_1[color=red,label="size:130\nlabel:7"]
-    131_0[color=red,label="size:1\nlabel:7"]
+    1311[color=red,label="size:130\nlabel:10"]
+    1310[color=red,label="size:1\nlabel:7"]
     161[color=blue,label="size:161\nlabel:14"];
-    161_1[color=red,label="size:160\nlabel:14"];
-    161_0[color=red,label="size:1\nlabel:14"];
+    1611[color=red,label="size:160\nlabel:14"];
+    1610[color=red,label="size:1\nlabel:203"];
     115[color=blue,label="size:115\nlabel:3"];
-    115_1[color=red,label="size:114\nlabel:3"];
-    115_0[color=red,label="size:1\nlabel:3"];
+    1151[color=red,label="size:114\nlabel:3"];
+    1150[color=red,label="size:1\nlabel:28"];
     181[color=blue,label="size:181\nlabel:5"];
-    181_1[color=red,label="size:180\nlabel:3"];
-    181_0[color=red,label="size:1\nlabel:3"];
-    140[color=blue,label="size:140\nlabel:2"];
+    1811[color=red,label="size:180\nlabel:5"];
+    1810[color=red,label="size:1\nlabel:752"];
+    140[color=blue,label="size:141\nlabel:1"];
+    1401[color=red,label="size:140\nlabel:1"];
+    1400[color=red,label="size:1\nlabel:775"];
     121[color=blue,label="size:121\nlabel:4"];
-    849[color=red,label="size:849\nlabel:2",fontsize=15];
-    688[color=red,label="size:688\nlabel:2",frontsize=10];
-    442[color=red,label="size:442\nlabel:2"];
-    261[color=red,label="size:261\nlabel:2"];
+    1211[color=red,label="size:120\nlabel:4"];
+    1210[color=red,label="size:1\nlabel:254"];
+    849[color=red,label="size:850\nlabel:1",fontsize=15];
+    688[color=red,label="size:689\nlabel:1",frontsize=10];
+    442[color=red,label="size:443\nlabel:1"];
+    261[color=red,label="size:262\nlabel:1"];
     246[color=red,label="size:246\nlabel:3"];
 }
